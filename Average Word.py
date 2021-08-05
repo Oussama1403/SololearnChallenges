@@ -1,0 +1,6 @@
+s = input()
+fil = ''.join(filter(lambda x: x not in ''',;!-.?:''', s))
+l = fil.split()
+x = sum(len(word) for word in l) / len(l)
+y = round(x)
+print(y)
